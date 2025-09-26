@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { mockPortfolio } from '@/data/mockData';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,6 +63,7 @@ const Header = () => {
 
           {/* Social Links Desktop */}
           <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle />
             {mockPortfolio.github && (
               <Button variant="ghost" size="sm" asChild>
                 <a href={mockPortfolio.github} target="_blank" rel="noopener noreferrer">
@@ -137,6 +139,7 @@ const Header = () => {
               
               {/* Mobile Social Links */}
               <div className="flex items-center space-x-4 pt-4">
+                <ThemeToggle />
                 {mockPortfolio.github && (
                   <Button variant="ghost" size="sm" asChild>
                     <a href={mockPortfolio.github} target="_blank" rel="noopener noreferrer">

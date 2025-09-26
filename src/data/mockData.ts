@@ -5,62 +5,64 @@ import weatherDashboardImage from '@/assets/weather-dashboard-project.jpg';
 
 export const mockPortfolio: Portfolio = {
   nome: "Piego Developer",
-  cargo: "Full Stack Developer",
-  sobreMim: "Desenvolvedor Full Stack apaixonado por criar soluções inovadoras e eficientes. Com experiência em diversas tecnologias modernas, busco sempre entregar código limpo e performático, focando na melhor experiência do usuário.",
+  cargo: "Backend Developer",
+  sobreMim: "Desenvolvedor backend especializado em arquiteturas escaláveis e APIs robustas. Com mais de 4 anos de experiência construindo sistemas distribuídos, microserviços e soluções de alta performance. Apaixonado por clean code e boas práticas de desenvolvimento.",
   tecnologias: {
     backend: [
-      { linguagem: "Node.js", nivel: 90 },
-      { linguagem: "Python", nivel: 85 },
-      { linguagem: "Java", nivel: 75 },
-      { linguagem: "Express.js", nivel: 88 },
-      { linguagem: "NestJS", nivel: 80 }
+      { linguagem: "Node.js", nivel: 95 },
+      { linguagem: "Python", nivel: 90 },
+      { linguagem: "Java", nivel: 88 },
+      { linguagem: "C#", nivel: 85 },
+      { linguagem: "Go", nivel: 80 },
+      { linguagem: "Express.js", nivel: 92 },
+      { linguagem: "NestJS", nivel: 88 }
     ],
     frontend: [
-      { linguagem: "React", nivel: 95 },
-      { linguagem: "TypeScript", nivel: 90 },
-      { linguagem: "Next.js", nivel: 85 },
-      { linguagem: "Vue.js", nivel: 70 },
-      { linguagem: "Tailwind CSS", nivel: 92 }
+      { linguagem: "React", nivel: 70 },
+      { linguagem: "JavaScript", nivel: 75 },
+      { linguagem: "HTML/CSS", nivel: 68 }
     ],
     dB: [
-      { linguagem: "MongoDB", nivel: 88 },
-      { linguagem: "PostgreSQL", nivel: 82 },
-      { linguagem: "MySQL", nivel: 75 },
-      { linguagem: "Redis", nivel: 70 }
+      { linguagem: "MongoDB", nivel: 92 },
+      { linguagem: "PostgreSQL", nivel: 90 },
+      { linguagem: "MySQL", nivel: 88 },
+      { linguagem: "Redis", nivel: 85 },
+      { linguagem: "Elasticsearch", nivel: 80 }
     ],
     deploy: [
-      { linguagem: "Docker", nivel: 85 },
-      { linguagem: "AWS", nivel: 80 },
-      { linguagem: "Vercel", nivel: 90 },
-      { linguagem: "Heroku", nivel: 75 }
+      { linguagem: "Docker", nivel: 90 },
+      { linguagem: "AWS", nivel: 88 },
+      { linguagem: "Kubernetes", nivel: 85 },
+      { linguagem: "CI/CD", nivel: 82 },
+      { linguagem: "Jenkins", nivel: 78 }
     ]
   },
   experiencia: [
     {
       empresa: "TechCorp Solutions",
-      cargo: "Senior Full Stack Developer",
+      cargo: "Senior Backend Developer",
       tecnologiasUsadas: {
-        backend: ["Node.js", "NestJS", "TypeScript"],
-        frontend: ["React", "Next.js", "Tailwind CSS"],
-        dB: ["PostgreSQL", "MongoDB"],
-        deploy: ["Docker", "AWS"]
+        backend: ["Node.js", "NestJS", "TypeScript", "Microserviços"],
+        frontend: [],
+        dB: ["PostgreSQL", "MongoDB", "Redis"],
+        deploy: ["Docker", "AWS", "Kubernetes"]
       },
       dataInicio: new Date("2022-03-15"),
       dataFim: new Date("2024-01-30"),
-      descricao: "Liderou o desenvolvimento de aplicações web complexas, implementando arquiteturas escaláveis e otimizando performance. Responsável por mentoria de desenvolvedores júnior e definição de padrões de código."
+      descricao: "Arquitetura e desenvolvimento de sistemas distribuídos escaláveis. Liderou a migração para microserviços, implementou APIs GraphQL e RESTful, otimizou performance de banco de dados resultando em 40% de melhoria na velocidade."
     },
     {
-      empresa: "StartupXYZ",
-      cargo: "Full Stack Developer",
+      empresa: "FinTech Solutions",
+      cargo: "Backend Developer",
       tecnologiasUsadas: {
-        backend: ["Node.js", "Express.js"],
-        frontend: ["React", "JavaScript", "CSS3"],
-        dB: ["MongoDB"],
-        deploy: ["Heroku", "Vercel"]
+        backend: ["Java", "Spring Boot", "C#"],
+        frontend: [],
+        dB: ["PostgreSQL", "MongoDB"],
+        deploy: ["Docker", "AWS"]
       },
       dataInicio: new Date("2020-06-01"),
       dataFim: new Date("2022-02-28"),
-      descricao: "Desenvolveu do zero a plataforma principal da startup, incluindo sistema de autenticação, painel administrativo e APIs RESTful. Participou ativamente das decisões de arquitetura e tecnologia."
+      descricao: "Desenvolvimento de sistemas financeiros críticos com alta disponibilidade. Implementou integração bancária via APIs, processamento de transações em tempo real e compliance com regulamentações PCI DSS."
     }
   ],
   github: "https://github.com/piego-dev",
@@ -72,49 +74,49 @@ export const mockPortfolio: Portfolio = {
 export const mockProjects: Project[] = [
   {
     _id: "1",
-    tituloProjeto: "E-commerce Platform",
-    resumoProjeto: "Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de estoque.",
+    tituloProjeto: "API Gateway Microserviços",
+    resumoProjeto: "Gateway escalável para orquestração de microserviços com autenticação JWT, rate limiting e load balancing.",
     tecnologiasProjeto: {
-      backend: ["Node.js", "Express.js", "JWT"],
-      frontend: ["React", "TypeScript", "Tailwind CSS"],
+      backend: ["Node.js", "Express.js", "JWT", "Redis"],
+      frontend: [],
       dB: ["MongoDB", "Redis"],
-      deploy: ["Docker", "AWS EC2"]
+      deploy: ["Docker", "Kubernetes", "AWS"]
     },
     dataCriacao: new Date("2024-01-15"),
     imagemProjeto: ecommerceImage,
-    descricaoCompletaProjeto: "Uma plataforma de e-commerce completa desenvolvida com as melhores práticas de desenvolvimento. Inclui sistema de autenticação seguro, carrinho de compras, processamento de pagamentos, painel administrativo para gestão de produtos e pedidos, e sistema de notificações em tempo real.",
-    gitHubProjeto: "https://github.com/piego-dev/ecommerce-platform",
-    deployProjeto: "https://ecommerce-demo.vercel.app"
+    descricaoCompletaProjeto: "Sistema de API Gateway robusto desenvolvido para gerenciar comunicação entre microserviços. Inclui sistema de autenticação JWT, rate limiting por usuário, circuit breaker pattern, monitoramento de saúde dos serviços e balanceamento de carga inteligente.",
+    gitHubProjeto: "https://github.com/piego-dev/api-gateway-microservices",
+    deployProjeto: "https://api-gateway-demo.herokuapp.com"
   },
   {
     _id: "2",
-    tituloProjeto: "Task Management App",
-    resumoProjeto: "Aplicação de gerenciamento de tarefas com colaboração em equipe e notificações em tempo real.",
+    tituloProjeto: "Sistema de Processamento Assíncrono",
+    resumoProjeto: "Sistema de filas para processamento assíncrono de tarefas em larga escala com retry automático.",
     tecnologiasProjeto: {
-      backend: ["NestJS", "TypeScript", "Socket.io"],
-      frontend: ["Next.js", "React Query", "Chakra UI"],
-      dB: ["PostgreSQL", "Prisma"],
-      deploy: ["Vercel", "Railway"]
+      backend: ["Python", "Celery", "RabbitMQ", "FastAPI"],
+      frontend: [],
+      dB: ["PostgreSQL", "Redis"],
+      deploy: ["Docker", "AWS ECS"]
     },
     dataCriacao: new Date("2023-10-20"),
     imagemProjeto: taskManagerImage,
-    descricaoCompletaProjeto: "Aplicação moderna para gerenciamento de tarefas e projetos em equipe. Possui funcionalidades de colaboração em tempo real, sistema de notificações, relatórios de produtividade e integração com calendários externos.",
-    gitHubProjeto: "https://github.com/piego-dev/task-manager",
-    deployProjeto: "https://tasks-manager-pro.vercel.app"
+    descricaoCompletaProjeto: "Sistema robusto para processamento assíncrono de tarefas críticas. Implementa padrões de retry com backoff exponencial, dead letter queues, monitoramento de performance e dashboards de métricas em tempo real.",
+    gitHubProjeto: "https://github.com/piego-dev/async-task-processor",
+    deployProjeto: "https://task-processor-api.herokuapp.com"
   },
   {
     _id: "3",
-    tituloProjeto: "Weather Dashboard",
-    resumoProjeto: "Dashboard meteorológico com previsões avançadas e mapas interativos.",
+    tituloProjeto: "API de Analytics em Tempo Real",
+    resumoProjeto: "API para coleta e processamento de eventos de analytics com alta throughput e baixa latência.",
     tecnologiasProjeto: {
-      backend: ["Python", "FastAPI", "OpenWeather API"],
-      frontend: ["Vue.js", "D3.js", "Vuetify"],
-      dB: ["PostgreSQL"],
-      deploy: ["Docker", "Digital Ocean"]
+      backend: ["Go", "Kafka", "ClickHouse"],
+      frontend: [],
+      dB: ["ClickHouse", "Redis"],
+      deploy: ["Kubernetes", "GCP"]
     },
     dataCriacao: new Date("2023-07-10"),
     imagemProjeto: weatherDashboardImage,
-    descricaoCompletaProjeto: "Dashboard completo para visualização de dados meteorológicos com mapas interativos, gráficos dinâmicos e previsões detalhadas. Inclui alertas personalizados e histórico de dados climáticos.",
-    gitHubProjeto: "https://github.com/piego-dev/weather-dashboard"
+    descricaoCompletaProjeto: "Sistema de alta performance para ingestão e processamento de eventos de analytics. Processa milhões de eventos por segundo com agregações em tempo real, suporte a queries complexas e APIs otimizadas para dashboards.",
+    gitHubProjeto: "https://github.com/piego-dev/realtime-analytics-api"
   }
 ];
